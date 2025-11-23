@@ -4,7 +4,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - DATABASE_URL=postgresql+asyncpg://postgres:password@db:5432/botofarm
+      - DATABASE_URL=postgresql://postgres:12345678@db:5432/botofarm
     depends_on:
       - db
     volumes:
